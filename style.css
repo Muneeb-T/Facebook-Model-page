@@ -1,0 +1,500 @@
+.body{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    background-color: azure;
+    padding: 5px 1%;
+    border-bottom: 1px solid;
+    border-color: rgb(213, 213, 213);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-left, .nav-buttons, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.nav-center {
+    margin: auto;
+}
+
+.search-box {
+    background: rgb(232, 231, 231);
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box input {
+    font-size: medium;
+    outline: none;
+    border: 0;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+}
+
+.search-box i {
+    color: rgb(182, 182, 247);
+
+}
+
+.nav-center ul, .nav-right ul {
+    margin: 0;
+}
+
+.nav-center ul li, .nav-right ul li, .options ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-center ul li button {
+    color: rgb(41, 41, 41);
+    font-size: larger;
+    border: 0;
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.nav-center ul li button:hover {
+    background-color: rgb(232, 231, 231);
+    color: blue;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.nav-user-profile {
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-user-profile:hover {
+    background: rgb(230, 230, 230);
+}
+
+.nav-user-profile img {
+    margin-right: 10px;
+    width: 30px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nav-user-profile p {
+    margin: 0;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.options ul li div {
+    text-align: center;
+    padding: 13px 10px;
+    border-radius: 100%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.options ul li div:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.options ul li div i {
+    color: rgb(41, 41, 41);
+    width: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-part {
+    height: 100vh;
+    flex-basis: 25%;
+    position: sticky;
+    top: 65px;
+    align-self: flex-start;
+}
+
+.left-part ul {
+    padding: 0;
+    margin: 0 0 0 3%;
+    list-style: none;
+}
+
+.left-part ul li {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.left-part ul li:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.left-part ul li div, .left-part ul li img {
+    box-shadow: 0 0 7px rgb(163, 163, 163);
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 30px;
+}
+
+
+
+.main-content {
+    padding: 20px;
+    flex-basis: 47%;
+    height: 1000px;
+}
+
+
+.stories-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.story {
+    box-shadow: 0 1px 4px rgb(109, 109, 109);
+    flex-basis: 19%;
+    padding-top: 35%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.story img {
+    padding: 2px;
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #ffffff;
+}
+
+.story p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.story.story1 img {
+    top: unset;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+
+.story1 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/profile-picture.png);
+}
+
+.story2 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/messi.jpg);
+}
+
+.story3 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/travel.png);
+}
+
+.story4 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/ali\ akbar.jpg);
+}
+
+.story5 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/rafi.png);
+}
+
+
+.post-container {
+    box-shadow: 0 1px 4px rgb(170, 170, 170);
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.write-post-container div .profile-pic, .post-container .profile-pic {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post-input input {
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    outline: none;
+    width: 100%;
+    padding-inline: 10px;
+    font-size: medium;
+}
+
+hr {
+    opacity: 40%;
+    margin: 0;
+}
+
+.post-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-buttons div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.post-buttons div:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+.post span {
+    color: rgb(48, 48, 216);
+}
+
+.post img {
+    width: 100%;
+}
+
+.post div {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+}
+
+.likes-count {
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.likes-count img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.comments-shares-count {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+
+.comments-shares-count a {
+    color: rgb(53, 53, 53);
+    margin-left: 10px;
+}
+
+.like-share-comment {
+    color: rgb(34, 34, 34);
+    display: flex;
+    padding: 0;
+}
+
+.like-share-comment div {
+    padding: 0;
+    display: flex;
+    flex-basis: 33.3%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.like-share-comment div p {
+    margin-block: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.like-share-comment div:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.right-part {
+    padding-inline: 20px;
+    flex-basis: 30%;
+    position: sticky;
+    top: 65px;
+    align-self: flex-start;
+    background-color: white;
+    border-radius: 4px;
+    color: #626262;
+}
+
+.right-part ul {
+    list-style: none;
+}
+
+.right-part ul li p {
+    margin-left: 10px;
+}
+
+
+
+
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sidebar-title h4{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sidebar-title a{
+    text-decoration: none;
+    color: #1872f2;
+    font-size: 12px;
+}
+
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.left-event{
+    border-radius: 10px;
+    height: 55px;
+    width: 65px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.event p{
+    font-size: 12px;
+}
+.event a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1872f2;
+}
+
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1872f2;
+    color: white;
+    font-size: 10px;
+    padding: 4px 0;
+}
+
+.right-event h4{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.right-event p{
+    margin: 0;
+}
+
+
+
+
+
+
+.online{
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #41db51;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.online-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.online-list:hover{
+    background-color: #e8e8e8;
+}
+
+.online img{
+    width: 100%;
+    border-radius: 50%;
+}
