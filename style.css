@@ -1,6 +1,6 @@
-.body{
-    padding: 0;
+body{
     margin: 0;
+    padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ nav {
     border-bottom: 1px solid;
     border-color: rgb(213, 213, 213);
     position: sticky;
-    top: 0;
+    top:0;
     z-index: 1;
 }
 
@@ -130,10 +130,9 @@ nav {
 }
 
 .left-part {
-    height: 100vh;
     flex-basis: 25%;
     position: sticky;
-    top: 65px;
+    top: 70px;
     align-self: flex-start;
 }
 
@@ -287,6 +286,7 @@ hr {
 
 .post-buttons div:hover {
     background-color: rgb(233, 233, 233);
+    cursor: pointer;
 }
 
 
@@ -373,7 +373,7 @@ hr {
     padding-inline: 20px;
     flex-basis: 30%;
     position: sticky;
-    top: 65px;
+    top: 50px;
     align-self: flex-start;
     background-color: white;
     border-radius: 4px;
@@ -395,13 +395,12 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 18px;
 }
 
 .sidebar-title h4{
-    margin-bottom: 0;
     font-weight: 600;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .sidebar-title a{
@@ -460,17 +459,12 @@ hr {
 }
 
 
-
-
-
-
 .online{
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
     width: 40px;
     height: 40px;
-    overflow: hidden;
 }
 
 .online::after{
@@ -481,8 +475,8 @@ hr {
     border-radius: 50%;
     background-color: #41db51;
     position: absolute;
-    top:0;
-    right: 0;
+    top:28px;
+    left: 32px;
 }
 
 .online-list{
