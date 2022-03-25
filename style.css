@@ -17,7 +17,7 @@ nav {
     z-index: 1;
 }
 
-.nav-left, .nav-buttons, .nav-right {
+.nav-logo-portion, .nav-buttons, .nav-options {
     display: flex;
     align-items: center;
 }
@@ -27,7 +27,7 @@ nav {
     width: 40px;
 }
 
-.nav-center {
+.nav-links-buttons {
     margin: auto;
 }
 
@@ -54,16 +54,16 @@ nav {
 
 }
 
-.nav-center ul, .nav-right ul {
+.nav-links-buttons ul, .nav-options ul {
     margin: 0;
 }
 
-.nav-center ul li, .nav-right ul li, .options ul li {
+.nav-links-buttons li, .nav-options ul li, .options ul li {
     list-style: none;
     display: inline-block;
 }
 
-.nav-center ul li button {
+.nav-links-buttons ul li button {
     color: rgb(41, 41, 41);
     font-size: larger;
     border: 0;
@@ -72,12 +72,12 @@ nav {
     background: transparent;
 }
 
-.nav-center ul li button:hover {
+.nav-links-buttons ul li button:hover {
     background-color: rgb(232, 231, 231);
     color: blue;
 }
 
-.nav-right {
+.nav-options {
     margin-left: auto;
 }
 
@@ -129,20 +129,20 @@ nav {
     justify-content: space-between;
 }
 
-.left-part {
+.navigation-buttons {
     flex-basis: 25%;
     position: sticky;
     top: 70px;
     align-self: flex-start;
 }
 
-.left-part ul {
+.navigation-buttons ul {
     padding: 0;
     margin: 0 0 0 3%;
     list-style: none;
 }
 
-.left-part ul li {
+.navigation-buttons ul li {
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -150,11 +150,11 @@ nav {
     padding-left: 10px;
 }
 
-.left-part ul li:hover {
+.navigation-buttons ul li:hover {
     background-color: rgb(232, 232, 232);
 }
 
-.left-part ul li div, .left-part ul li img {
+.navigation-buttons ul li div, .navigation-buttons ul li img {
     box-shadow: 0 0 7px rgb(163, 163, 163);
     border-radius: 50%;
     margin-right: 10px;
@@ -177,7 +177,7 @@ nav {
 }
 
 
-.story {
+.stories-section div {
     box-shadow: 0 1px 4px rgb(109, 109, 109);
     flex-basis: 19%;
     padding-top: 35%;
@@ -188,7 +188,7 @@ nav {
     cursor: pointer;
 }
 
-.story img {
+.stories-section div img {
     padding: 2px;
     position: absolute;
     width: 40px;
@@ -198,7 +198,7 @@ nav {
     border: 2px solid #ffffff;
 }
 
-.story p {
+.stories-section div p {
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -207,31 +207,31 @@ nav {
     font-size: 14px;
 }
 
-.story.story1 img {
+
+.stories-section div:nth-child(1) img{
     top: unset;
     left: 50%;
     bottom: 50px;
     transform: translateX(-50%);
 }
 
-
-.story1 {
+.stories-section div:nth-child(1){
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/profile-picture.png);
 }
 
-.story2 {
+.stories-section div:nth-child(2){
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/messi.jpg);
 }
 
-.story3 {
+.stories-section div:nth-child(3) {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/travel.png);
 }
 
-.story4 {
+.stories-section div:nth-child(4) {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/ali\ akbar.jpg);
 }
 
-.story5 {
+.stories-section div:nth-child(5) {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/rafi.png);
 }
 
@@ -369,7 +369,7 @@ hr {
     background-color: rgb(228, 228, 228);
 }
 
-.right-part {
+.events-conversations {
     padding-inline: 20px;
     flex-basis: 30%;
     position: sticky;
@@ -380,30 +380,30 @@ hr {
     color: #626262;
 }
 
-.right-part ul {
+.events-conversations ul {
     list-style: none;
 }
 
-.right-part ul li p {
+.events-conversations ul li p {
     margin-left: 10px;
 }
 
 
 
 
-.sidebar-title{
+.title{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.sidebar-title h4{
+.title h4{
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 15px;
 }
 
-.sidebar-title a{
+.title a{
     text-decoration: none;
     color: #1872f2;
     font-size: 12px;
@@ -417,7 +417,7 @@ hr {
 
 }
 
-.left-event{
+.event-date{
     border-radius: 10px;
     height: 55px;
     width: 65px;
@@ -432,13 +432,13 @@ hr {
 .event p{
     font-size: 12px;
 }
-.event a {
+.event a{
     font-size: 12px;
     text-decoration: none;
     color: #1872f2;
 }
 
-.left-event span{
+.event-date span{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -449,12 +449,12 @@ hr {
     padding: 4px 0;
 }
 
-.right-event h4{
+.event-details h4{
     margin: 0;
     margin-top: 10px;
 }
 
-.right-event p{
+.event-details p{
     margin: 0;
 }
 
